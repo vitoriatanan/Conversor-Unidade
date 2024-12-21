@@ -47,7 +47,13 @@ int main() {
                 carregamento();
 
                 switch (segundaOpcao) {
+                    case 0: {
+                        printf("Voltando ao menu inicial.\n");
+                        break;
+                    }
+
                     case 1: {
+                        break;
                     }
 
                     case 2: {
@@ -60,7 +66,10 @@ int main() {
                     }
 
                     default: {
-                        break;
+                        if (segundaOpcao != 0) {
+                            printf("Opção inválida!\n");
+                            break;
+                        }
                     }
                 }
                 break;

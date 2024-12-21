@@ -5,7 +5,7 @@ void carregamento() {
 }
 
 void menuInicial() {
-    printf("\t 1 - QUILÔMETRO (Km);\n"
+    printf("\t 1 - QUIL\u00d4METRO (Km);\n"
            "\t 2 - METRO (m);\n"
            "\t 3 - CENTIMETRO (cm);\n"
            "\t 4 - MILIMETRO (mm);\n"
@@ -15,8 +15,8 @@ void menuInicial() {
 }
 
 void menuMetro() {
-    printf("\t 1 - CENTÍMETRO (cm);\n"
-           "\t 2 - MILÍMETRO (mm);\n"
+    printf("\t 1 - CENT\u00cdMETRO (cm);\n"
+           "\t 2 - MIL\u00cdMETRO (mm);\n"
            "\t 0 - VOLTAR AO MENU INICIAL.\n");
            carregamento();
 }
@@ -25,8 +25,8 @@ int main() {
     int primeiraOpcao, segundaOpcao;
     float valor;
 
-    printf("Olá! Bem vidno(a) ao nosso Sistema de conversão de Unidades de comprimento!\n");
-    printf("\t Segue o nosso menu para auxiá-lo(a):\n");
+    printf("Ol\u00e1! Bem-vindo(a) ao nosso Sistema de convers\u00e3o de Unidades de comprimento!\n");
+    printf("\t Segue o nosso menu para auxili\u00e1-lo(a):\n");
 
     do {
         menuInicial();
@@ -39,8 +39,8 @@ int main() {
             }
 
             case 2: {
-                printf("Você escolheu a unidade de metro (m).\n");
-                printf("Você deseja converter de metro para: \n");
+                printf("Voc\u00ea escolheu a unidade de metro (m).\n");
+                printf("Voc\u00ea deseja converter de metro para: \n");
                 menuMetro();
                 printf("Digite o valor correspondente a unidade que deseja converter: ");
                 scanf("%d", &segundaOpcao);
@@ -53,21 +53,25 @@ int main() {
                     }
 
                     case 1: {
+                        printf("Voc\u00ea escolheu a unidade de cent\u00edmetro (cm).\n");
+                        printf("Digite o valor em metros (m) para convert\u00ea-lo em cent\u00edmetros (cm): ");
+                        scanf("%f", &valor);
+                        printf("%.2f metros (m) equivalem a %.2f cent\u00edmetros (cm).\n", valor, valor * 100);
                         break;
                     }
 
                     case 2: {
-                        printf("Você escolheu a unidade de milímetro (mm).\n");
-                        printf("Digite o valor em metros (m) para convertê-lo em milímetros (mm): ");
+                        printf("Voc\u00ea escolheu a unidade de mil\u00edmetro (mm).\n");
+                        printf("Digite o valor em metros (m) para convert\u00ea-lo em mil\u00edmetros (mm): ");
                         scanf("%f", &valor);
-                        printf("%.2f metros (m) equivalem a %.2f milímetros (mm).\n", valor, valor * 1000);
+                        printf("%.2f metros (m) equivalem a %.2f mil\u00edmetros (mm).\n", valor, valor * 1000);
 
                         break;
                     }
 
                     default: {
                         if (segundaOpcao != 0) {
-                            printf("Opção inválida!\n");
+                            printf("Op\u00e7\u00e3o inv\u00e1lida!\n");
                             break;
                         }
                     }
@@ -85,7 +89,7 @@ int main() {
             
             default: {
                 if (primeiraOpcao != 0) {
-                    printf("Opção inválida. Por favor, digite novamente.\n");
+                    printf("Op\u00e7\u00e3o inv\u00e1lida. Por favor, digite novamente.\n");
                 }
                 break;
             }

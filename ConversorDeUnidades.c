@@ -104,7 +104,7 @@ int main() {
                 break;
             }
 
-            /* Conversão de centímetro para metro ou milímetro */
+            /* Conversão de centímetro para outra medida a ser escolhida */
             case 3: {
                 printf("Voce escolheu a unidade de centimetro (cm).\n");
                 printf("Voce deseja converter de centimetro para: \n");
@@ -113,29 +113,36 @@ int main() {
                 scanf("%d", &segundaOpcao);
                 carregamento();
 
-                switch (segundaOpcao)
-                {
-                case 0:
-                    printf("Voltando ao menu inicial.\n");
-                    break;
+                switch (segundaOpcao){
+                    case 0:
+                        printf("Voltando ao menu inicial.\n");
+                        break;
 
                     /* Case para conversão de centímetro para metro*/
-                case 1: {
-                    printf("Voce escolheu a unidade de metro (m).\n");
-                    printf("Digite o valor em centimetros (cm) para converte-lo em metro (m): ");
-                    scanf("%f", &valor);
-                    printf("\n%.2f centimetro(s) (cm) equivalem a %.2f metro(s) (m).\n", valor, valor / 100);
-                    break;
-                }
-                    
-                
-                default:
-                    if (segundaOpcao != 0) {
-                        printf("Opçao invalida!\n");
+                    case 1: {
+                        printf("Voce escolheu a unidade de metro (m).\n");
+                        printf("Digite o valor em centimetros (cm) para converte-lo em metro (m): ");
+                        scanf("%f", &valor);
+                        printf("\n%.2f centimetro(s) (cm) equivalem a %.2f metro(s) (m).\n", valor, valor / 100);
+                        break;
+                    } /* Case para conversão de centímetro para milimetro*/
+                    case 2: {
+                        printf("Voce escolheu a unidade de milimetro (mm).\n");
+                        printf("Digite o valor em centimetros (cm) para converte-lo em milimetro (mm): ");
+                        scanf("%f", &valor);
+                        printf("\n%.2f centimetro(s) (cm) equivalem a %.2f milimetro(s) (m).\n", valor, valor *10.0);
+                        break;
+                    }    
+                    case 3: {
+                        
                         break;
                     }
-                }
-            }
+                    
+                    default:
+                        printf("Opçao invalida!\n");
+                        break;
+                        
+                    }
 
             case 4: {
                 break;

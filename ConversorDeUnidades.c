@@ -37,7 +37,14 @@ void menuCentimetro() {
            "\t 0 - VOLTAR AO MENU INICIAL.\n");
            carregamento();
 }
-
+//Menu para auxiliar na conversão de milímetro para outra unidade a escolha do usuario
+void menuMilimetro() {
+    printf("\t 1 - CENTIMETRO (cm);\n"
+           "\t 2 - METRO (m);\n"
+           "\t 3 - QUILOMETRO (km);\n"
+           "\t 0 - VOLTAR AO MENU INICIAL.\n");
+           carregamento();
+}
 
 int main() {
     int primeiraOpcao, segundaOpcao;

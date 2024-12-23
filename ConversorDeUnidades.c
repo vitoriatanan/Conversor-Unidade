@@ -46,6 +46,14 @@ void menuCentimetro() {
            "\t 0 - VOLTAR AO MENU INICIAL.\n");
            carregamento();
 }
+//Menu auxiliar para conversão de milímetro para outra unidade a escolha do usuario
+void menuMilimetro() {
+    printf("\t 1 - CENTIMETRO (cm);\n"
+           "\t 2 - METRO (m);\n"
+           "\t 3 - QUILOMETRO (km);\n"
+           "\t 0 - VOLTAR AO MENU INICIAL.\n");
+           carregamento();
+}
 
 int main() {
     int primeiraOpcao, segundaOpcao;
@@ -148,7 +156,7 @@ int main() {
                 break;
             }
 
-            /* Conversão de centímetro para metro ou milímetro */
+            /* Conversão de centímetro para outra medida a ser escolhida */
             case 3: {
                 printf("Voce escolheu a unidade de centimetro (cm).\n");
                 printf("Voce deseja converter de centimetro para: \n");
@@ -157,37 +165,67 @@ int main() {
                 scanf("%d", &segundaOpcao);
                 carregamento();
 
-                switch (segundaOpcao) {
-                    case 0:
-                        printf("Voltando ao menu inicial.\n");
-                        break;
+                switch (segundaOpcao)
+                {
+                case 0:
+                    printf("Voltando ao menu inicial.\n");
+                    break;
 
                     /* Case para conversão de centímetro para metro*/
-                    case 1: {
-                        printf("Voce escolheu a unidade de metro (m).\n");
-                        printf("Digite o valor em centimetros (cm) para converte-lo em metro (m): ");
-                        scanf("%f", &valor);
-                        printf("\n%.2f centimetro(s) (cm) equivalem a %.2f metro(s) (m).\n", valor, valor / 100);
+                case 1: {
+                    printf("Voce escolheu a unidade de metro (m).\n");
+                    printf("Digite o valor em centimetros (cm) para converte-lo em metro (m): ");
+                    scanf("%f", &valor);
+                    printf("\n%.2f centimetro(s) (cm) equivalem a %.2f metro(s) (m).\n", valor, valor / 100);
+                    break;
+                }
+                    
+                
+                default:
+                    if (segundaOpcao != 0) {
+                        printf("Opçao invalida!\n");
                         break;
                     }
-
-                    default:
-                        if (segundaOpcao != 0) {
-                            printf("Opçao invalida!\n");
-                        }
-                        break;
                 }
-                break;
             }
 
+            /* Conversão de milímetro para outra medida a ser escolhida */
             case 4: {
+                printf("Voce escolheu a unidade de milimetro (mm).\n");
+                printf("Voce deseja converter de milimetro para: \n");
+                menuMilimetro();
+                printf("Digite o valor correspondente a unidade que deseja converter: ");
+                scanf("%d", &segundaOpcao);
+                carregamento();
                 break;
+                switch (segundaOpcao)
+                {
+                case 0:
+                    printf("Voltando ao menu inicial.\n");
+                    break;
+                // mm para cm
+                case 1: {
+                    printf("Voce escolheu a unidade milimetro (mm).\n");
+                    printf("Digite o valor em milimetros (mm) para converte-lo em metro (cm): ");
+                    scanf("%f", &valor);
+                    printf("\n%.2f milimetro(s) (mm) equivalem a %.2f centimetro(s) (m).\n", valor, valor / 10);
+                    break;
+                } // mm para m
+                case 2: {
+                    
+                    break;
+                }    // mm para km
+                case 3: {
+                    break;
+                } 
+                default:
+                    printf("Opçao invalida!\n");
+                        break;               
+                }
             }
 
             default: {
-                if (primeiraOpcao != 0) {
-                    printf("Opçao invalida. Por favor, digite novamente.\n");
-                }
+                printf("Opçao invalida. Por favor, digite novamente.\n");
                 break;
             }
         }

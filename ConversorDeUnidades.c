@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 void carregamento() {
@@ -236,21 +237,28 @@ int main() {
                 case 0:
                     printf("Voltando ao menu inicial.\n");
                     break;
-                // mm para cm
+                /* Conversão de milímetro para centímetro */
                 case 1: {
                     printf("Voce escolheu a unidade milimetro (mm).\n");
                     printf("Digite o valor em milimetros (mm) para converte-lo em centimetros (cm): ");
                     scanf("%f", &valor);
                     printf("\n%.2f milimetro(s) (mm) equivalem a %.2f centimetro(s) (cm).\n", valor, valor / 10);
                     break;
-                } // mm para m
+                } /* Conversão de milímetro para metro */
                 case 2: {
                         printf("Voce escolheu a unidade milimetro (mm).\n");
                         printf("Digite o valor em milimetros (mm) para converte-lo em metro (m): ");
                         scanf("%f", &valor);
                         printf("\n%.2f milimetro(s) (mm) equivalem a %.2f metros(s) (m).\n", valor, (valor / 1000));
                     break;
-                }    // mm para cm
+                } /* Conversão de milímetro para quilômetro */
+                case 3: {
+                    printf("Voce escolheu a unidade milimetro (mm).\n");
+                    printf("Digite o valor em milimetros (mm) para converte-lo em metro (cm): ");
+                    scanf("%f", &valor);
+                    printf("\n%.2f milimetro(s) (mm) equivalem a %.2f quilometro(s) (km).\n", valor, valor / 1000000);
+                    break;
+                } 
                 default:
                     printf("Opçao invalida!\n");
                         break;               

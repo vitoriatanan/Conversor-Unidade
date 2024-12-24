@@ -1,7 +1,5 @@
 <h1 align="center"> Sistema de Conversão de Unidades de Comprimento</h1>
 
-
-
 ## 📋 Sobre
 <p align="justify"> 
 Este programa permite realizar diferentes conversões de unidades de comprimento como, metro, centímetro, milímetro e quilômetro.
@@ -45,7 +43,7 @@ Ao executar o programa é exibido um MENU inicial com opções de unidade de con
 ## 👨‍💻 Contribuidores: 
 - [Adrian Trajano](https://github.com/AdrianTr97)
 - [Eduardo Lino](https://github.com/Linosz)
-- Emmanuel 
+- [Emmanuel Souza](https://github.com/EmmanuelS-S) 
 - [Gabriel Marcone](https://github.com/gabrielmarcone)
 - [Kauan Teixeira](https://github.com/kauanth21)
 - [Matheus Amorim](https://github.com/Matheus0o0)

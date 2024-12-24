@@ -23,9 +23,10 @@ void menuInicial() {
  */
 void menuQuilometro() {
     printf("\t================================\n");
-    printf("\t  CONVERTER DE QUILOMETRO PARA\n");
+    printf("\t  CONVERTER DE QUILOMETRO PARA  \n");
     printf("\t================================\n");
     printf("\t 1 - CENTIMETRO (cm);\n"
+            "\t 2 - TODAS AS UNIDADES (m, cm, mm);\n"
            "\t 0 - VOLTAR AO MENU INICIAL.\n");
     carregamento();
 }
@@ -36,7 +37,7 @@ void menuQuilometro() {
  */
 void menuMetro() {
     printf("\t================================\n");
-    printf("\t     CONVERTER DE METRO PARA\n");
+    printf("\t     CONVERTER DE METRO PARA    \n");
     printf("\t================================\n");
     printf("\t 1 - CENTIMETRO (cm);\n"
            "\t 2 - MILIMETRO (mm);\n"
@@ -50,7 +51,7 @@ void menuMetro() {
  */
 void menuCentimetro() {
     printf("\t================================\n");
-    printf("\t  CONVERTER DE CENTIMETRO PARA\n");
+    printf("\t  CONVERTER DE CENTIMETRO PARA  \n");
     printf("\t================================\n");
     printf("\t 1 - METRO (m);\n"
            "\t 2 - MILIMETRO (mm);\n"
@@ -61,7 +62,7 @@ void menuCentimetro() {
 //Menu auxiliar para conversão de milímetro para outra unidade a escolha do usuario
 void menuMilimetro() {
     printf("\t================================\n");
-    printf("\t  CONVERTER DE MILIMETRO PARA\n");
+    printf("\t  CONVERTER DE MILIMETRO PARA   \n");
     printf("\t================================\n");
     printf("\t 1 - CENTIMETRO (cm);\n"
            "\t 2 - METRO (m);\n"
@@ -82,6 +83,9 @@ int main() {
         carregamento();
 
         switch (primeiraOpcao) {
+            case 0: {
+                break;
+            }
             case 1: {
                 //printf("Voce escolheu a unidade de quilometro (Km).\n");
                 //printf("Voce deseja converter de quilometro para: \n");
@@ -265,7 +269,8 @@ int main() {
         carregamento();
     } while (primeiraOpcao != 0);
 
-    printf("Obrigado por usar o nosso sistema! Volte sempre!");
+    printf("Obrigado por usar o nosso sistema! Volte sempre!\n");
+    carregamento();
 
     return 0;
 }

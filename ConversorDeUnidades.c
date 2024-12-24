@@ -38,6 +38,12 @@ void menuCentimetro() {
            carregamento();
 }
 
+void menuQuilometro(){
+    printf("\t 1 - METRO (m);\n"
+           "\t 2 - CETIMETRO (cm);\n"
+           "\t 0 - VOLTAR AO MENU INICIAL.\n");
+           carregamento();
+}
 
 int main() {
     int primeiraOpcao, segundaOpcao;
@@ -53,6 +59,35 @@ int main() {
 
         switch (primeiraOpcao) {
             case 1: {
+                printf("Voce escolheu a unidade de Quilometro (Km).\n");
+                printf("Voce deseja converter de Quilometro para: \n");
+                menuQuilometro();
+                printf("\nDigite o valor correspondente a unidade que deseja converter: ");
+                scanf("%d", &segundaOpcao);
+                carregamento();
+                printf("Digite o valor em quilometro(Km) a ser convertido\n");
+                scanf("%f", &valor);
+                    switch (segundaOpcao)
+                    {
+                    case 0: {
+                        printf("Voltando ao menu inicial.\n");
+                        break;
+                    }
+
+                    case 1:
+                        printf("\n O valor %.2f(Km) equivale a %.2f(m)\n", valor, valor * 1000);
+                        break;
+                        
+                    case 2:
+                        //Converter de Km para cm
+                    break;
+                    
+                    default:
+                        if (segundaOpcao != 0) {
+                                printf("Opçao invalida!\n");
+                                break;
+                            }
+                    }
                 break;
             }
 

@@ -15,6 +15,7 @@ Este programa permite realizar diferentes conversões de unidades de comprimento
     - Metros (m)
     - Milímetros (mm)
 - Conversão de milímetros (mm) para:
+    - Centímetro (cm)
     - Metros (m)
 - Conversão de quilômetros (km) para:
     - Metros (m)
@@ -40,4 +41,10 @@ Ao executar o programa é exibido um MENU inicial com opções de unidade de con
     - Escolha a opção 0 para sair do programa.
 
 ## 👨‍💻 Contribuidores: 
-
+Adrian Trajano
+Eduardo Lino Silva
+Emmanuel Souza
+Gabriel Marcone
+Kauan
+Matheus Amorim
+Vitória Tanan

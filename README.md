@@ -44,11 +44,11 @@ Ao executar o programa é exibido um MENU inicial com opções de unidade de con
 
 ## 👨‍💻 Contribuidores: 
 - [Adrian Trajano](https://github.com/AdrianTr97)
-- Eduardo Lino
+- [Eduardo Lino](https://github.com/Linosz)
 - Emmanuel 
-- Gabriel Marcone
-- Kauan Teixeira
-- Matheus Amorim
-- Vitória Tanan
+- [Gabriel Marcone](https://github.com/gabrielmarcone)
+- [Kauan Teixeira](https://github.com/kauanth21)
+- [Matheus Amorim](https://github.com/Matheus0o0)
+- [Vitória Tanan](https://github.com/vitoriatanan)
 
 

@@ -6,7 +6,7 @@ void carregamento() {
 
 void menuInicial() {
     printf("\t================================\n");
-    printf("\t\t      MENU\n");
+    printf("\t\t      MENU\n"                    );
     printf("\t================================\n");
     printf("\t 1 - QUILOMETRO (Km);\n"
            "\t 2 - METRO (m);\n"

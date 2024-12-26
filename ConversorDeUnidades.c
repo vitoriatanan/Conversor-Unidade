@@ -42,6 +42,7 @@ void menuMetro() {
     printf("\t================================\n");
     printf("\t 1 - CENTIMETRO (cm);\n"
            "\t 2 - MILIMETRO (mm);\n"
+           "\t 3 - QUILOMETRO (km);\n" 
            "\t 0 - VOLTAR AO MENU INICIAL.\n");
            carregamento();
 }
@@ -168,11 +169,18 @@ int main() {
                         printf("%.2f metros (m) equivalem a %.2f milimetros (mm).\n", valor, valor * 1000);
                         break;
                     }
+                    /* Convertendo de metro para quilometro*/
+                    case 3: {
+                        printf("Voce escolheu a unidade de quilometro (km).\n");
+                        printf("Digite o valor em metros (m) para converte-lo em quilometros (km): ");
+                        scanf("%f", &valor);
+                        carregamento();
+                        printf("%.2f metros (m) equivalem a %.6f quilometros (km).\n", valor, valor / 1000);
+                        break;
+                    }
 
                     default: {
-                        if (segundaOpcao != 0) {
                             printf("Opçao invalida!\n");
-                        }
                         break;
                     }
                 }

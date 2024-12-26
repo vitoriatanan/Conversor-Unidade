@@ -8,8 +8,13 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
+<<<<<<< HEAD
       "cwd": "c:/Users/Oem/Desktop/Conversor-Unidade",
       "program": "c:/Users/Oem/Desktop/Conversor-Unidade/build/Debug/outDebug",
+=======
+      "cwd": "c:/Users/Oem/Desktop/Conversor-Unidade-1",
+      "program": "c:/Users/Oem/Desktop/Conversor-Unidade-1/build/Debug/outDebug",
+>>>>>>> 861fb01134810dc3aec6a53d1cd5e77fbc676b49
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

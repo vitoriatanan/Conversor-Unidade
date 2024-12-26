@@ -67,6 +67,7 @@ void menuMilimetro() {
     printf("\t================================\n");
     printf("\t 1 - CENTIMETRO (cm);\n"
            "\t 2 - METRO (m);\n"
+           "\t 3 - QUILOMETRO (km);\n"
            "\t 0 - VOLTAR AO MENU INICIAL.\n");
            carregamento();
 }
@@ -100,7 +101,7 @@ int main() {
                         printf("Voltando ao menu inicial.\n");
                         break;
                     }
-                    /* Convertendo de metro para centímetro */
+                    /* Convertendo de qui para centímetro */
                     case 1: {
                         printf("Voce escolheu a unidade de centimetro (cm).\n");
                         printf("Digite o valor em quilometros (Km) para converte-lo em centimetros (cm): ");
@@ -109,7 +110,7 @@ int main() {
                         break;
                     }
 
-                    /* Convertendo de metro para milímetro*/
+                    /* Convertendo de quilômetro para todas as unidades */
                     case 2: {
                         printf("Voce escolheu a conversao para todas as unidades.\n");
                         printf("Digite o valor em quilometros (Km): ");
@@ -210,11 +211,6 @@ int main() {
                         printf("%.2f centimetro(s) (cm) equivalem a %.2f milimetro(s) (mm).\n", valor, valor *10.0);
                         break;
                     }    
-                    case 3: {
-                        
-                        break;
-                    }
-                    
                     default:
                         printf("Opçao invalida!\n");
                         break;

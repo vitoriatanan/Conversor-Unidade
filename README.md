@@ -9,9 +9,11 @@ Este programa permite realizar diferentes conversões de unidades de comprimento
 - Conversão de metros (m) para:
     - Centímetros (cm)
     - Milímetros (mm)
+    - Quilômetros (km)
 - Conversão de centímetros (cm) para:
     - Metros (m)
     - Milímetros (mm)
+    - Quilômetros (km)
 - Conversão de milímetros (mm) para:
     - Metros (m)
     - Centímetros (cm)
